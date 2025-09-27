@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css" />
+    <title>JOEY FORTINI | PORTFOLIO</title>
+  </head>
+
+  <body class="bg-bg-primary">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-bg-primary sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+
+          <!-- Name/Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="font-body font-light text-text-primary tracking-wider">
+              JOEY
+            </a>
+          </div>
+          
+          <!-- Desktop Navigation Links - Centered -->
+          <div class="hidden md:flex md:items-center md:space-x-12">
+            <a href="#about" class="text-text-primary font-body px-3 py-2 text-sm font-medium hover:text-text-caption transition-colors duration-100  tracking-wide uppercase">
+              [ABOUT ME]
+            </a>
+            <a href="#projects" class="text-text-primary font-body px-3 py-2 text-sm font-medium hover:text-text-caption transition-colors duration-100  tracking-wide uppercase">
+              [PORTFOLIO]
+            </a>
+            <a href="#work" class="text-text-primary font-body px-3 py-2 text-sm font-medium hover:text-text-caption transition-colors duration-100 tracking-wide uppercase">
+              [CAREER]
+            </a>
+            <a href="#contact" class="text-text-primary font-body px-3 py-2 text-sm font-medium hover:text-text-caption transition-colors duration-100 tracking-wide uppercase">
+              [CONTACT]
+            </a>
+          </div>
+          
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" type="button" class="text-text-primary hover:text-brand-600 focus:outline-none focus:text-brand-600 transition-colors duration-200">
+             [MENU]
+            </button>
+          </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden absolute top-0 left-0 right-0 bg-bg-secondary opacity-0 -translate-y-2 transition-all duration-200 ease-out">
+          
+          <!-- Close button in top left -->
+          <div class="flex justify-between items-center p-4">
+            <div class="w-6"></div> <!-- Spacer for centering -->
+            <div class="text-text-primary font-body font-normal tracking-wider">
+              JOEY
+            </div>
+            <button id="close-menu-button" type="button" class="text-text-primary focus:outline-none">
+              [CLOSE]
+            </button>
+          </div>
+          
+          <!-- Menu items -->
+          <div class="px-4 pb-4 space-y-2">
+            <a href="#about" class="block py-3 text-text-primary font-body hover:text-brand-600 transition-colors duration-300 tracking-wide uppercase border-l-2 border-transparent hover:border-brand-600">
+              [ABOUT ME]
+            </a>
+            <a href="#projects" class="block py-3 text-text-primary font-body hover:text-brand-600 transition-colors duration-300 tracking-wide uppercase border-l-2 border-transparent hover:border-brand-600">
+              [PORTFOLIO]
+            </a>
+            <a href="#work" class="block py-3 text-text-primary font-body hover:text-brand-600 transition-colors duration-300 tracking-wide uppercase border-l-2 border-transparent hover:border-brand-600">
+              [CAREER]
+            </a>
+            <a href="#contact" class="block py-3 text-text-primary font-body hover:text-brand-600 transition-colors duration-300 tracking-wide uppercase border-l-2 border-transparent hover:border-brand-600">
+              [CONTACT]
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- Hero Section  -->
+      <section id="hero" class="pt-8 pb-32 px-8 bg-bg-primary min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto text-center w-full">
+
+          <!-- Title -->
+          <div class="mb-8">
+            <h1 class="text-7xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-black text-text-primary tracking-tighter leading-none">
+              SOFTWARE DEVELOPER
+            </h1>
+            <div class="max-w-3xl mx-auto mb-0">
+              <p class="text-md md:text-lg text-text-primary font-light uppercase">
+                 Mobile & Desktop Application Development
+              </p>
+              <p class="text-md md:text-lg text-text-primary font-light uppercase">
+                Mobile & Web Design (UI/UX)
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Section -->
+          <div class="max-w-2xl mx-auto mb-8 flex justify-center">
+            <img src="images/profile_pic.jpeg" alt="Photo of Joey Fortini" class="w-72 h-98 object-cover rounded-lg shadow-lg">
+          </div>
+          
+          <!-- Subtitle -->
+          <div class="max-w-3xl mx-auto">
+            <p class="text-md md:text-lg text-text-primary leading-relaxed font-light uppercase">
+              Developer by trade. Creator by passion.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-22 px-8 pb-32 scroll-mt-20 md:scroll-mt-20 gs-reveal">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-5xl mb-4 sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter leading-none text-center">
+            ABOUT ME
+          </h2>
+
+          <!-- About content here -->
+          <div class="text-md md:text-lg text-text-primary leading-relaxed font-light uppercase mb-8">
+            <p class="mb-8 text-center">
+              I’m Joseph Fortini — a software engineer passionate about turning ideas into meaningful, usable software solutions. 
+            </p>
+            
+            <p class="mb-8 text-center">
+              I earned my B.S. in Computer Science from Youngstown State University, and since then I’ve had the privilege of working with companies that challenge the status quo and strive to revolutionize how we use technology. 
+            </p>
+            
+            <p class="mb-8 text-center">
+              I thrive on tackling new challenges and see every project as an opportunity to learn and grow. My curiosity and drive for improvement fuel my excitement to explore new tools, frameworks, and approaches - whether it’s building polished user experiences or experimenting with emerging technologies. 
+            </p>
+            
+            <p class="mb-8 text-center">
+              I enjoy collaborating with others to solve problems, share knowledge, and create products that make a real impact. For me, software development isn’t just a career — it’s a craft that blends creativity, logic, and continuous learning. 
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-22 px-8 pb-32 scroll-mt-20 md:scroll-mt-20 gs-reveal">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-5xl mb-4 sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter leading-none text-center">
+            PORTFOLIO
+          </h2>
+
+          <!-- Projects Grid -->
+          <div class="grid md:grid-cols-2 text-center lg:grid-cols-3 gap-8"> 
+
+            <!-- Project Card 1 -->
+            <div class="project-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" data-project="1">
+              <div class="aspect-video relative overflow-hidden">
+                <img src="images/tunistic_mockup.png" alt="Tunisitic App Cover" class="w-full h-full p-2 object-cover">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-body font-semibold text-text-primary mb-0 uppercase">
+                  Tunisitic
+                </h3>
+                <p class="text-text-caption font-body text-sm mb-2 uppercase">
+                  Cross-platform music recommendation app
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">Flutter</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">Figma</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" data-project="2">
+              <div class="aspect-video relative overflow-hidden">
+                <img src="images/tunistic_mockup.png" alt="Tunisitic App Cover" class="w-full h-full p-2 object-cover">
+              </div>
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-body font-semibold text-text-primary mb-0 uppercase">
+                  Lune
+                </h3>
+                <p class="text-text-caption font-body text-sm leading-relaxed mb-2 uppercase">
+                  Clean, considered digital products.
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">SwiftUI</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">iOS</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">Core Data</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" data-project="3">
+              <div class="aspect-video relative overflow-hidden">
+                <img src="images/portfolio_site_project.png" alt="Tunisitic App Cover" class="w-full h-full p-2 object-cover">
+              </div>
+              <div class="p-6 text-center">
+                <h3 class="text-xl font-body font-semibold text-text-primary mb-0 uppercase">
+                  Portfolio
+                </h3>
+                <p class="text-text-caption font-body text-sm leading-relaxed mb-2 uppercase">
+                  (This) website to showcase my skills and experiences
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">HTML</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">CSS</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">JavaScript</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">TailwindCSS</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">GSAP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detail Modal -->
+      <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-bg-secondary rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+          
+          <!-- Modal Header -->
+          <div class="flex justify-between items-center p-6">
+            <h2 id="modal-title" class="text-2xl font-semibold text-text-primary uppercase">
+              Project Title
+            </h2>
+            <button id="close-modal" class="text-text-primary hover:text-text-caption transition-colors duration-100">
+              [CLOSE]
+            </button>
+          </div>
+          
+          <!-- Modal Content -->
+          <div class="p-6">
+            <div class="mb-16 relative">
+              <div id="carousel-container" class="aspect-video rounded-lg overflow-hidden relative">
+                <img id="carousel-image" src="" alt="Project Image" class="w-full h-full object-cover">
+              </div>
+            
+              <!-- Nav container -->
+              <div id="nav-container" class="w-full flex items-center justify-between mt-3">
+      
+                <button id="prev-btn" class="text-text-primary rounded-full hover:text-text-on-light transition-colors duration-100">
+                  [PREV]
+                </button>
+            
+                <!-- Image indicator dots will be generated dynamically -->
+                <div id="image-indicators" class="flex space-x-2">
+                 
+                </div>
+            
+                <button id="next-btn" class="text-text-primary rounded-full over:text-text-on-light transition-colors duration-100">
+                  [NEXT]
+                </button>
+              </div>
+            </div>
+                      
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Description</h3>
+                <p id="modal-description" class="text-text-caption leading-relaxed mb-8 uppercase">
+                  Project description here
+                </p>
+                
+                <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Features</h3>
+                
+                <!-- Features list will be here -->
+                <ul id="modal-features" class="text-text-caption space-y-2 mb-0">
+                </ul>
+                
+              </div>
+              
+              <div>
+                <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Technologies</h3>
+                
+                <!-- Technology tags will be inserted here -->
+                <div id="modal-tech" class="flex flex-wrap gap-2 mb-8">
+                </div>
+                
+                <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Links</h3>
+                <!-- Project links will be inserted here -->
+                <div id="modal-links" class="underline space-y-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <section id="work" class="py-22 px-8 pb-32 scroll-mt-20 md:scroll-mt-20 gs-reveal">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-5xl mb-4 sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-text-primary tracking-tighter leading-none text-center">
+            Career
+          </h2>
+
+          <!-- Work Experience Grid -->
+          <!-- <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Work Card 1 -->
+            <div class="work-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer" data-work="1">
+              <div class="p-6 text-center uppercase">
+                <h3 class="text-xl font-semibold text-text-primary mb-0">Software Developer</h3>
+                <p class="text-text-caption font-body text-sm leading-relaxed mb-2">JuggerBot 3D</p>
+                <p class="text-text-primary font-body text-xs leading-relaxed mb-0">Feb 2024 - Present</p>
+                <!-- <div class="flex flex-wrap gap-2">
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">WPF</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">Figma</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">Python</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">Qt</span>
+
+                </div> -->
+              </div>
+            </div>
+
+            <!-- Work Card 2 -->
+            <div class="work-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer" data-work="2">
+              <div class="p-6 text-center uppercase">
+                <h3 class="text-xl font-semibold text-text-primary mb-0">Systems Engineer</h3>
+                <p class="text-text-caption font-body text-sm leading-relaxed mb-2">Talis Clinical</p>
+                <p class="text-text-primary font-body text-xs leading-relaxed mb-0">May 2023 - Feb 2024</p>
+                <!-- <div class="flex flex-wrap gap-2">
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">SQL</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">CSS</span>
+                  <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">HTML</span>
+                </div> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section id="contact" class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <h2 class="font-body font-light text-text-primary tracking-wider">
+            GET IN TOUCH
+          </h2>
+  
+          <!-- Contact content here -->
+          <div class="flex justify-center gap-6">
+            <a href="https://www.linkedin.com/in/joseph-fortini-688768147" class="underline text-text-primary font-light font-body hover:text-text-caption transition-colors duration-100 tracking-wide uppercase">
+              [LINKEDIN]
+            </a>
+            <a href="https://github.com/Jfortini81" class="underline text-text-primary font-light font-body hover:text-text-caption transition-colors duration-100 tracking-wide uppercase">
+              [GITHUB]
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile menu behavior-->
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeMenuButton = document.getElementById('close-menu-button');
+
+      function openMenu() {
+        // show then animate in
+        mobileMenu.classList.remove('hidden');
+        // force next frame so transition applies
+        requestAnimationFrame(() => {
+          mobileMenu.classList.remove('opacity-0', '-translate-y-2');
+        });
+      }
+
+      function closeMenu() {
+        // animate out
+        mobileMenu.classList.add('opacity-0', '-translate-y-2');
+        // hide after transition ends
+        const handler = () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.removeEventListener('transitionend', handler);
+        };
+        mobileMenu.addEventListener('transitionend', handler);
+      }
+
+      // Open on hamburger
+      mobileMenuButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        // if currently hidden (opacity-0), open; otherwise close
+        if (mobileMenu.classList.contains('hidden') || mobileMenu.classList.contains('opacity-0')) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
+
+      // Close on [CLOSE] button
+      closeMenuButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeMenu();
+      });
+
+      // Close when clicking any menu link
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => closeMenu());
+      });
+
+      // Close when clicking outside the menu
+      document.addEventListener('click', (event) => {
+        const clickInsideMenu = mobileMenu.contains(event.target);
+        const clickOnButton = mobileMenuButton.contains(event.target);
+        if (!clickInsideMenu && !clickOnButton && !mobileMenu.classList.contains('hidden')) {
+          closeMenu();
+        }
+      });
+
+      // Optional: close on Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+          closeMenu();
+        }
+      });
+    </script>
+
+    <script>
+      // On load reveal hero quickly
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('observe'));
+      });
+
+      // IntersectionObserver for scroll-in
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('show');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal.observe').forEach(el => io.observe(el));
+    </script>
+      
+    <!--Disable browser scroll restore--->
+    <script>
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      
+      // On hard reload or live-reload, ensure we start at the hero
+      window.addEventListener('load', () => {
+        // Clear any hash so the browser doesn't jump to a section
+        if (location.hash) {
+          history.replaceState(null, '', location.pathname + location.search);
+        }
+        // Scroll to top (hero)
+        window.scrollTo(0, 0);
+      });
+    </script>
+
+    <!-- GSAP Intergation-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> 
+    
+    <!-- GSAP Timeline-->
+    <script>
+      window.addEventListener('load', () => {
+        const heroTl = gsap.timeline();
+
+        // Optional: subtle navbar reveal on scroll up (minimalist)
+      let lastY = window.scrollY;
+      const nav = document.querySelector('nav');
+      if (nav) {
+        ScrollTrigger.create({
+          start: 0,
+          onUpdate: () => {
+            const y = window.scrollY;
+            if (y > lastY && y > 80) {
+              nav.style.transform = 'translateY(-100%)';
+            } else {
+              nav.style.transform = 'translateY(0)';
+            }
+            nav.style.transition = 'transform .2s ease-out';
+            lastY = y;
+          }
+        });
+      }
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero
+        heroTl
+          .from("#hero h1", {
+            y: 20,
+            autoAlpha: 0,
+            duration: 0.6,
+            ease: "power2.out"
+          })
+          .from("#hero h2", {
+            y: 20,
+            autoAlpha: 0,
+            duration: 0.6,
+            ease: "power2.out"
+          }, "-=0.3") // overlaps with h1
+
+          .from("#hero img", {
+            scale: 0.9,
+            autoAlpha: 0,
+            duration: 0.6,
+            ease: "power2.out"
+          }, "-=0.2")
+          .from("#hero p", {
+            y: 20,
+            autoAlpha: 0,
+            duration: 0.6,
+            ease: "power2.out"
+          }, "-=0.3");
+      });
+
+
+      // About Me
+      gsap.from("#about h2", {
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 80%", // when top of section hits 80% of viewport
+        },
+        y: 20,
+        autoAlpha: 0,
+        duration: 0.6,
+        ease: "power2.out"
+      });
+
+      gsap.from("#about p", {
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 70%",
+        },
+        y: 20,
+        autoAlpha: 0,
+        duration: 0.6,
+        delay: 0.2,
+        ease: "power2.out"
+      });
+
+
+  // Set initial state for elements that will animate in
+  gsap.set("#projects h2, #projects .project-card, #work h2, #work .work-card", {
+    autoAlpha: 0,
+    y: 20
+  });
+
+  // Portfolio
+  gsap.to("#projects h2", {
+    scrollTrigger: {
+      trigger: "#projects",
+      start: "top 80%",
+    },
+    y: 0,
+    autoAlpha: 1,
+    duration: 0.6,
+    ease: "power2.out"
+  });
+
+  gsap.to("#projects .project-card", {
+    scrollTrigger: {
+      trigger: "#projects",
+      start: "top 70%",
+    },
+    y: 0,
+    autoAlpha: 1,
+    duration: 0.6,
+    ease: "power2.out",
+    stagger: 0.2
+  });
+
+  // Work Experience
+  gsap.to("#work h2", {
+    scrollTrigger: {
+      trigger: "#work",
+      start: "top 80%",
+    },
+    y: 0,
+    autoAlpha: 1,
+    duration: 0.6,
+    ease: "power2.out"
+  });
+
+  gsap.to("#work .work-card", {
+    scrollTrigger: {
+      trigger: "#work",
+      start: "top 70%",
+    },
+    y: 0,
+    autoAlpha: 1,
+    duration: 0.6,
+    ease: "power2.out",
+    stagger: 0.2
+  });
+
+
+
+
+
+
+
+      // // Respect reduced motion
+      // const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+      // // Register plugin
+      // gsap.registerPlugin(ScrollTrigger);
+
+    
+      // // Quick hero intro on load
+      // if (!reduceMotion) {
+      //   gsap.from('#hero h1', { y: 8, autoAlpha: 0, duration: 0.35, ease: 'power2.out', delay: 0.05 });
+      //   gsap.from('#hero .sub', { y: 8, autoAlpha: 0, duration: 0.3, ease: 'power2.out', delay: 0.12, stagger: 0.05 });
+      // }
+    
+      // // Set initial state for reveal items
+      // gsap.set('.gs-reveal', { autoAlpha: 0, y: 12 });
+    
+      // // Scroll reveals (minimal, quick)
+      // if (!reduceMotion) {
+      //   gsap.utils.toArray('.gs-reveal').forEach(el => {
+      //     gsap.to(el, {
+      //       autoAlpha: 1,
+      //       y: 0,
+      //       duration: 0.35,
+      //       ease: 'power2.out',
+      //       scrollTrigger: {
+      //         trigger: el,
+      //         start: 'top 80%',
+      //         toggleActions: 'play none none none'
+      //       }
+      //     });
+      //   });
+      // }
+    
+    </script>
+  </body>
+
+  <!-- Project Cards behavior -->
+  <script>
+    let currentImageIndex = 0;
+    let projectImages = [];
+
+    // Project data
+    const projects = {
+      1: {
+        title: "Tunisitic",
+        description: "A cross-platform music recommendation app that gives you insights about the music you might like, beyond the sterotypical \"Related to this artist\" explanation",
+        images: [
+          "images/tunistic_mockup.png",
+          "images/tunistic_mockup.png",
+          "images/tunistic_mockup.png"
+        ],
+        technologies: ["Flutter", "Figma", "Rest API",],
+        features: [
+          "Responsive design for all devices",
+          "RESTful API architecture using Spotify API",
+          "List to save liked songs"
+        ],
+        links: [
+          { text: "GitHub Repository", url: "https://github.com/Jfortini81/Tunistic", type: "code" }
+        ]
+      },
+      2: {
+        title: "Mobile App",
+        description: "An iOS productivity app designed to help users manage their daily tasks and improve their workflow. Built with SwiftUI and Core Data for optimal performance.",
+        images: [
+          "images/tunistic_mockups.png",
+          "images/tunistic_mockups.png",
+          "images/tunistic_mockups.png"
+        ],
+        technologies: ["SwiftUI", "Core Data", "iOS", "Xcode", "Swift"],
+        features: [
+          "Intuitive task management interface",
+          "Offline data synchronization",
+          "Customizable themes and layouts",
+          "Push notifications for reminders",
+          "Data export and backup functionality"
+        ],
+        links: [
+          { text: "App Store", url: "https://apps.apple.com/app/example", type: "demo" },
+          { text: "Source Code", url: "https://github.com/joeyfortini/mobile-app", type: "code" }
+        ]
+      },
+      3: {
+        title: "Portfolio Website",
+        description: "A modern, fully responsive developer portfolio designed to highlight my skills and experience while focusing on clean design and an engaging user experience. It serves as both a professional showcase and a personal project where I experimented with design polish, frontend best practices, and performance optimization.",
+        images: [
+          "images/portfolio_site_project.png",
+        ],
+        technologies: ["HTML", "CSS", "Javascript", "TailwindCSS", "GSAP"],
+        features: [
+          "Responsive design for all devices",
+          "Project Showcase",
+          "Custom Animations",
+        ],
+        links: [
+          { text: "GitHub Repository", url: "https://github.com/joeyfortini/dashboard", type: "code" }
+        ]
+      }
+    };
+
+    // Simplified work experience data
+    const workExperience = {
+      1: {
+        title: "Software Developer",
+        company: "JuggerBot 3D", 
+        duration: "Feb 2024 - Present",
+        description: "Developed desktop applications for 3D printing workflow management. Collaborated with engineering teams to create user-friendly interfaces for complex manufacturing processes. Led initiatives to improve user experience and streamline manufacturing workflows."
+      },
+      2: {
+        title: "Systems Engineer", 
+        company: "Talis Clinical",
+        duration: "May 2023 - Feb 2024", 
+        description: "Managed clinical trial data systems and developed automated reporting solutions. Ensured compliance with regulatory standards while improving system efficiency. Collaborated with clinical research teams to optimize data collection processes."
+      }
+    };
+
+    // Get modal elements
+    const modal = document.getElementById('project-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalTech = document.getElementById('modal-tech');
+    const modalFeatures = document.getElementById('modal-features');
+    const modalLinks = document.getElementById('modal-links');
+    const closeModal = document.getElementById('close-modal');
+
+    // Carousel functionality
+    function updateCarousel() {
+      if (projectImages.length === 0) return;
+      
+      const carouselImage = document.getElementById('carousel-image');
+      carouselImage.src = projectImages[currentImageIndex];
+      
+      // Update indicators
+      const navContainer = document.getElementById('nav-container');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const indicators = document.getElementById('image-indicators');
+      
+      // Hide navigation if only one image
+      if (projectImages.length === 1) {
+        navContainer.style.display = 'none';
+        return;
+      } else {
+        navContainer.style.display = 'flex';
+      }
+      indicators.innerHTML = '';
+      
+      projectImages.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = `w-2 h-2 rounded-full cursor-pointer transition-colors duration-200 ${
+          index === currentImageIndex ? 'bg-dot-selected' : 'bg-dot-not-selected'
+        }`;
+        dot.addEventListener('click', () => {
+          currentImageIndex = index;
+          updateCarousel();
+        });
+        indicators.appendChild(dot);
+      });
+    }
+
+
+    // Navigation buttons
+    document.getElementById('prev-btn').addEventListener('click', () => {
+      currentImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : projectImages.length - 1;
+      updateCarousel();
+    });
+
+    document.getElementById('next-btn').addEventListener('click', () => {
+      currentImageIndex = currentImageIndex < projectImages.length - 1 ? currentImageIndex + 1 : 0;
+      updateCarousel();
+    });
+
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    [prevBtn , nextBtn].forEach(btn => {
+      btn.classList.add('hover:text-text-caption', 'transition-colors', 'duration-100');
+    });
+
+    // Modified populate function for different modal types
+    function populateModal(data, type) {
+      const carouselContainer = document.getElementById('carousel-container').parentNode;
+      const leftColumn = modalDescription.closest('div');
+      const rightColumn = leftColumn.nextElementSibling;
+      
+      if (type === 'work') {
+        // Hide image carousel completely
+        carouselContainer.style.display = 'none';
+        
+        // Update title with company info
+        modalTitle.textContent = `${data.title} - ${data.company}`;
+        modalDescription.textContent = data.description;
+        
+        // Add duration info right after title
+        let durationElement = document.getElementById('work-duration');
+        if (!durationElement) {
+          durationElement = document.createElement('div');
+          durationElement.id = 'work-duration';
+          durationElement.className = 'px-6 -mt-6 pb-2';
+          durationElement.innerHTML = '<p class="text-text-caption text-sm uppercase font-normal"></p>';
+          // Insert after the header div (which contains title and close button)
+          const headerDiv = modalTitle.closest('.flex');
+          headerDiv.parentNode.insertBefore(durationElement, headerDiv.nextSibling);
+        }
+        durationElement.querySelector('p').textContent = data.duration;
+        durationElement.style.display = 'block';
+
+        
+        // Hide the entire right column (tech & links)
+        rightColumn.style.display = 'none';
+        
+        // Hide features section in left column
+        const featuresSection = document.getElementById('modal-features').previousElementSibling;
+        featuresSection.style.display = 'none';
+        document.getElementById('modal-features').style.display = 'none';
+        
+        // Make left column full width
+        leftColumn.parentNode.classList.remove('md:grid-cols-2');
+        leftColumn.parentNode.classList.add('grid-cols-1');
+        
+      } else {
+        // Show everything for projects
+        carouselContainer.style.display = 'block';
+        rightColumn.style.display = 'block';
+        
+        // Reset grid layout
+        leftColumn.parentNode.classList.remove('grid-cols-1');
+        leftColumn.parentNode.classList.add('md:grid-cols-2');
+        
+        // Show features section
+        const featuresSection = document.getElementById('modal-features').previousElementSibling;
+        featuresSection.style.display = 'block';
+        document.getElementById('modal-features').style.display = 'block';
+        
+        // Hide work duration if it exists
+        const durationElement = document.getElementById('work-duration');
+        if (durationElement) {
+          durationElement.style.display = 'none';
+        }
+        
+        // Regular project population logic
+        modalTitle.textContent = data.title;
+        modalDescription.textContent = data.description;
+        
+        // Set up image carousel
+        projectImages = data.images;
+        currentImageIndex = 0;
+        updateCarousel();
+        
+        // Update technologies
+        modalTech.innerHTML = '';
+        data.technologies.forEach(tech => {
+          const tag = document.createElement('span');
+          tag.className = 'py-1 bg-brand-100 text-text-caption text-sm rounded-full uppercase';
+          tag.textContent = tech;
+          modalTech.appendChild(tag);
+        });
+        
+        // Update features
+        modalFeatures.innerHTML = '';
+        data.features.forEach(feature => {
+          const li = document.createElement('li');
+          li.className = 'text-text-caption uppercase';
+          li.textContent = feature;
+          modalFeatures.appendChild(li);
+        });
+        
+        // Update links
+        modalLinks.innerHTML = '';
+        data.links.forEach(link => {
+          const a = document.createElement('a');
+          a.href = link.url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.className = 'block py-2 rounded-lg text-text-caption uppercase tracking-wide hover:text-text-primary transition-colors duration-100';
+          a.textContent = `[${link.text.toUpperCase()}]`;
+          modalLinks.appendChild(a);
+        });
+      }
+    }
+
+    // Project card event listeners
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const projectId = card.getAttribute('data-project');
+        const project = projects[projectId];
+        
+        if (project) {
+          populateModal(project, 'project');
+          modal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    // Work card event listeners
+    document.querySelectorAll('.work-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const workId = card.getAttribute('data-work');
+        const work = workExperience[workId];
+        
+        if (work) {
+          populateModal(work, 'work');
+          modal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    // Close modal
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // let currentImageIndex = 0;
+    // let projectImages = [];
+
+    // // Project data
+    // const projects = {
+    //   1: {
+    //     title: "Tunisitic",
+    //     description: "A comprehensive web application built with modern technologies. This project showcases full-stack development skills with a focus on user experience and performance optimization.",
+    //     images: [
+    //       "images/tunistic_mockup.png",
+    //       "images/tunistic_mockup.png",
+    //       "images/tunistic_mockup.png"
+    //     ],
+    //     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    //     features: [
+    //       "Responsive design for all devices",
+    //       "Real-time data synchronization",
+    //       "User authentication and authorization",
+    //       "RESTful API architecture",
+    //       "Database optimization and caching"
+    //     ],
+    //     links: [
+    //       { text: "GitHub Repository", url: "https://github.com/joeyfortini/tunisitic", type: "code" }
+    //     ]
+    //   },
+    //   2: {
+    //     title: "Mobile App",
+    //     description: "An iOS productivity app designed to help users manage their daily tasks and improve their workflow. Built with SwiftUI and Core Data for optimal performance.",
+    //     images: [
+    //       "images/tunistic_mockups.png",
+    //       "images/tunistic_mockups.png",
+    //       "images/tunistic_mockups.png"
+    //     ],
+    //     technologies: ["SwiftUI", "Core Data", "iOS", "Xcode", "Swift"],
+    //     features: [
+    //       "Intuitive task management interface",
+    //       "Offline data synchronization",
+    //       "Customizable themes and layouts",
+    //       "Push notifications for reminders",
+    //       "Data export and backup functionality"
+    //     ],
+    //     links: [
+    //       { text: "App Store", url: "https://apps.apple.com/app/example", type: "demo" },
+    //       { text: "Source Code", url: "https://github.com/joeyfortini/mobile-app", type: "code" }
+    //     ]
+    //   },
+    //   3: {
+    //     title: "Portfolio Website",
+    //     description: "A comprehensive analytics dashboard that provides real-time insights into business metrics. Features interactive charts and customizable reporting tools.",
+    //     images: [
+    //       "images/tunistic_mockups.png",
+    //       "images/tunistic_mockups.png",
+    //       "images/tunistic_mockups.png"
+    //     ],
+    //     technologies: ["HTML", "HTML", "CSS", "Javascript", "TailwindCSS"],
+    //     features: [
+    //       "Real-time data visualization",
+    //       "Interactive charts and graphs",
+    //       "Customizable dashboard layouts",
+    //       "Data export in multiple formats",
+    //       "Role-based access control"
+    //     ],
+    //     links: [
+    //       { text: "GitHub Repository", url: "https://github.com/joeyfortini/dashboard", type: "code" }
+    //     ]
+    //   }
+    // };
+   
+
+    // // Simplified work experience data
+    // const workExperience = {
+    //   1: {
+    //     title: "Software Developer",
+    //     company: "JuggerBot 3D", 
+    //     duration: "Feb 2024 - Present",
+    //     description: "Developed desktop applications for 3D printing workflow management. Collaborated with engineering teams to create user-friendly interfaces for complex manufacturing processes. Led initiatives to improve user experience and streamline manufacturing workflows."
+    //   },
+    //   2: {
+    //     title: "Systems Engineer", 
+    //     company: "Talis Clinical",
+    //     duration: "May 2023 - Feb 2024", 
+    //     description: "Managed clinical trial data systems and developed automated reporting solutions. Ensured compliance with regulatory standards while improving system efficiency. Collaborated with clinical research teams to optimize data collection processes."
+    //   }
+    // };
+
+    // // Carousel functionality
+    // function updateCarousel() {
+    //   if (projectImages.length === 0) return;
+      
+    //   const carouselImage = document.getElementById('carousel-image');
+    //   carouselImage.src = projectImages[currentImageIndex];
+      
+    //   // Update indicators
+    //   const indicators = document.getElementById('image-indicators');
+    //   indicators.innerHTML = '';
+      
+    //   projectImages.forEach((_, index) => {
+    //     const dot = document.createElement('div');
+    //     dot.className = `w-2 h-2 rounded-full cursor-pointer transition-colors duration-200 ${
+    //       index === currentImageIndex ? 'bg-dot-selected' : 'bg-dot-not-selected'
+    //     }`;
+    //     dot.addEventListener('click', () => {
+    //       currentImageIndex = index;
+    //       updateCarousel();
+    //     });
+    //     indicators.appendChild(dot);
+    //   });
+    // }
+
+    // // Navigation buttons
+    // document.getElementById('prev-btn').addEventListener('click', () => {
+    //   currentImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : projectImages.length - 1;
+    //   updateCarousel();
+    // });
+
+    // document.getElementById('next-btn').addEventListener('click', () => {
+    //   currentImageIndex = currentImageIndex < projectImages.length - 1 ? currentImageIndex + 1 : 0;
+    //   updateCarousel();
+    // });
+
+    // // Click event to project cards
+    // document.querySelectorAll('.project-card').forEach(card => {
+    //   card.addEventListener('click', () => {
+    //     const projectId = card.getAttribute('data-project');
+    //     const project = projects[projectId];
+        
+    //     if (project) {
+    //       // Update modal content
+    //       modalTitle.textContent = project.title;
+    //       modalDescription.textContent = project.description;
+          
+    //       // Set up image carousel
+    //       projectImages = project.images;
+    //       currentImageIndex = 0;
+    //       updateCarousel();
+          
+    //       // Update technologies
+    //       modalTech.innerHTML = '';
+    //       project.technologies.forEach(tech => {
+    //         const tag = document.createElement('span');
+    //         tag.className = 'py-1 bg-brand-100 text-text-caption text-sm rounded-full uppercase';
+    //         tag.textContent = tech;
+    //         modalTech.appendChild(tag);
+    //       });
+          
+    //       // Update features
+    //       modalFeatures.innerHTML = '';
+    //       project.features.forEach(feature => {
+    //         const li = document.createElement('li');
+    //         li.className = 'text-text-caption uppercase';
+    //         li.textContent = feature;
+    //         modalFeatures.appendChild(li);
+    //       });
+          
+    //       // Update links
+    //       modalLinks.innerHTML = '';
+    //       project.links.forEach(link => {
+    //         const a = document.createElement('a');
+    //         a.href = link.url;
+    //         a.target = '_blank';
+    //         a.rel = 'noopener noreferrer';
+    //         a.className = 'block py-2 rounded-lg text-text-caption uppercase tracking-wide';
+    //         a.textContent = `[${link.text.toUpperCase()}]`;
+    //         modalLinks.appendChild(a);
+    //       });
+          
+    //       // Show modal
+    //       modal.classList.remove('hidden');
+    //       document.body.style.overflow = 'hidden';
+    //     }
+    //   });
+    // });
+
+    // // Get modal elements
+    // const modal = document.getElementById('project-modal');
+    // const modalTitle = document.getElementById('modal-title');
+    // const modalDescription = document.getElementById('modal-description');
+    // const modalImage = document.getElementById('modal-image');
+    // const modalTech = document.getElementById('modal-tech');
+    // const modalFeatures = document.getElementById('modal-features');
+    // const modalLinks = document.getElementById('modal-links');
+    // const closeModal = document.getElementById('close-modal');
+
+    // // Click event to project cards
+    // document.querySelectorAll('.project-card').forEach(card => {
+    //   card.addEventListener('click', () => {
+    //     const projectId = card.getAttribute('data-project');
+    //     const project = projects[projectId];
+        
+    //     if (project) {
+    //       // Update modal content
+    //       modalTitle.textContent = project.title;
+    //       modalDescription.textContent = project.description;
+    //       modalImage.className = `aspect-video ${project.image} rounded-lg mb-6`;
+          
+    //       // Update technologies
+    //       modalTech.innerHTML = '';
+    //       project.technologies.forEach(tech => {
+    //         const tag = document.createElement('span');
+    //         tag.className = 'py-1 bg-brand-100 text-text-caption text-sm rounded-full uppercase';
+    //         tag.textContent = tech;
+    //         modalTech.appendChild(tag);
+    //       });
+          
+    //       // Update features
+    //       modalFeatures.innerHTML = '';
+    //       project.features.forEach(feature => {
+    //         const li = document.createElement('li');
+    //         // Optional bullets: add 'list-disc pl-5' to the UL in markup, or here:
+    //         //modalFeatures.classList.add('list-disc','pl-5'); // do this once if desired
+    //         li.className = 'text-text-caption uppercase';
+    //         li.textContent = feature; // plain text, no icon
+    //         modalFeatures.appendChild(li);
+    //       });
+          
+    //       // Update links (uppercase with brackets)
+    //       modalLinks.innerHTML = '';
+    //       project.links.forEach(link => {
+    //         const a = document.createElement('a');
+    //         a.href = link.url;
+    //         a.target = '_blank';
+    //         a.rel = 'noopener noreferrer';
+    //         a.className = 'block py-2 rounded-lg text-text-caption uppercase tracking-wide transition-colors duration-100 hover:text-text-on-light';
+    //         a.textContent = `[${link.text.toUpperCase()}]`;
+    //         modalLinks.appendChild(a);
+    //       });
+          
+    //       // Show modal
+    //       modal.classList.remove('hidden');
+    //       document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    //     }
+    //   });
+    // });
+
+    // // Work cards
+    // document.querySelectorAll('.work-card').forEach(card => {
+    //   card.addEventListener('click', () => {
+    //     const workId = card.getAttribute('data-work');
+    //     const work = workExperience[workId];
+        
+    //     if (work) {
+    //       populateModal(work, 'work');
+    //       document.getElementById('project-modal').classList.remove('hidden');
+    //       document.body.style.overflow = 'hidden';
+    //     }
+    //   });
+    // });
+    // // Close modal
+    // closeModal.addEventListener('click', () => {
+    //   modal.classList.add('hidden');
+    //   document.body.style.overflow = 'auto'; // Restore scrolling
+    // });
+
+    // // Close modal when clicking outside
+    // modal.addEventListener('click', (e) => {
+    //   if (e.target === modal) {
+    //     modal.classList.add('hidden');
+    //     document.body.style.overflow = 'auto';
+    //   }
+    // });
+
+    // // Close modal with Escape key
+    // document.addEventListener('keydown', (e) => {
+    //   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    //     modal.classList.add('hidden');
+    //     document.body.style.overflow = 'auto';
+    //   }
+    // });
+  </script>
+
+  <!-- Work Experience Cards behavior -->
+  <!-- <script>
+
+    // Work experience data
+    const workExperience = {
+      1: {
+        title: "Software Engineer",
+        company: "Company Name",
+        duration: "2022 - Present",
+        description: "Led development of scalable web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+        images: ["images/work1-1.jpg", "images/work1-2.jpg"],
+        technologies: ["React", "Node.js", "Python", "PostgreSQL"],
+        achievements: [
+          "Improved application performance by 40%",
+          "Led team of 3 junior developers",
+          "Implemented CI/CD pipeline",
+          "Reduced bug reports by 60%"
+        ],
+        links: [
+          { text: "Company Website", url: "https://company.com", type: "demo" }
+        ]
+      },
+      2: {
+        title: "Junior Developer",
+        company: "Previous Company", 
+        duration: "2020 - 2022",
+        description: "Developed and maintained web applications. Gained experience in full-stack development and agile methodologies.",
+        images: ["images/work2-1.jpg"],
+        technologies: ["JavaScript", "CSS", "HTML", "React"],
+        achievements: [
+          "Built responsive web interfaces",
+          "Participated in code reviews",
+          "Contributed to team documentation",
+          "Learned agile development practices"
+        ],
+        links: []
+      },
+      3: {
+        title: "Software Intern",
+        company: "Tech Startup",
+        duration: "Summer 2019", 
+        description: "Summer internship focused on backend development and database management.",
+        images: ["images/work3-1.jpg"],
+        technologies: ["Python", "Django", "SQL", "Git"],
+        achievements: [
+          "Developed REST APIs",
+          "Optimized database queries",
+          "Participated in daily standups",
+          "Completed capstone project"
+        ],
+        links: []
+      }
+    };
+  
+    // Add click events for work cards (similar to project cards)
+    document.querySelectorAll('.work-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const workId = card.getAttribute('data-work');
+        const work = workExperience[workId];
+        
+        if (work) {
+          // Update modal content for work experience
+          modalTitle.textContent = `${work.title} - ${work.company}`;
+          modalDescription.textContent = work.description;
+          
+          // Set up image carousel
+          projectImages = work.images;
+          currentImageIndex = 0;
+          updateCarousel();
+          
+          // Update technologies
+          modalTech.innerHTML = '';
+          work.technologies.forEach(tech => {
+            const tag = document.createElement('span');
+            tag.className = 'py-1 bg-brand-100 text-text-caption text-sm rounded-full uppercase';
+            tag.textContent = tech;
+            modalTech.appendChild(tag);
+          });
+          
+          // Update features (achievements)
+          modalFeatures.innerHTML = '';
+          work.achievements.forEach(achievement => {
+            const li = document.createElement('li');
+            li.className = 'text-text-caption uppercase';
+            li.textContent = achievement;
+            modalFeatures.appendChild(li);
+          });
+          
+          // Update links
+          modalLinks.innerHTML = '';
+          work.links.forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.url;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            a.className = 'block py-2 rounded-lg transition-colors duration-200 text-text-caption hover:bg-brand-100 uppercase tracking-wide';
+            a.textContent = `[${link.text.toUpperCase()}]`;
+            modalLinks.appendChild(a);
+          });
+          
+          // Show modal
+          modal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+  </script> -->
+</html>

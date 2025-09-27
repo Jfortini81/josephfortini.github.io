@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Quick, minimal reveals */
+.reveal { opacity: 0; transform: translateY(6px); transition: opacity .2s ease-out, transform .2s ease-out; }
+.reveal.show { opacity: 1; transform: none; }
