@@ -36,7 +36,7 @@
               [CAREER]
             </a>
             <a href="#contact" class="text-text-primary font-body px-3 py-2 text-sm font-medium hover:text-text-caption transition-colors duration-100 tracking-wide uppercase">
-              [CONTACT]
+              [GET IN TOUCH]
             </a>
           </div>
           
@@ -53,7 +53,6 @@
           
           <!-- Close button in top left -->
           <div class="flex justify-between items-center p-4">
-            <div class="w-6"></div> <!-- Spacer for centering -->
             <div class="text-text-primary font-body font-normal tracking-wider">
               JOEY
             </div>
@@ -74,7 +73,7 @@
               [CAREER]
             </a>
             <a href="#contact" class="block py-3 text-text-primary font-body hover:text-brand-600 transition-colors duration-300 tracking-wide uppercase border-l-2 border-transparent hover:border-brand-600">
-              [CONTACT]
+              [GET IN TOUCH]
             </a>
           </div>
         </div>
@@ -94,10 +93,10 @@
               SOFTWARE DEVELOPER
             </h1>
             <div class="max-w-3xl mx-auto mb-0">
-              <p class="text-md md:text-lg text-text-primary font-light uppercase">
+              <p class="text-md md:text-lg text-text-primary leading-tight font-light uppercase">
                  Mobile & Desktop Application Development
               </p>
-              <p class="text-md md:text-lg text-text-primary font-light uppercase">
+              <p class="text-md md:text-lg text-text-primary leading-tight font-light uppercase">
                 Mobile & Web Design (UI/UX)
               </p>
             </div>
@@ -125,7 +124,7 @@
           </h2>
 
           <!-- About content here -->
-          <div class="text-md md:text-lg text-text-primary leading-relaxed font-light uppercase mb-8">
+          <div class="text-md md:text-lg text-text-primary leading-tight font-light uppercase mb-8">
             <p class="mb-8 text-center">
               I’m Joseph Fortini — a software engineer passionate about turning ideas into meaningful, usable software solutions. 
             </p>
@@ -153,7 +152,8 @@
           </h2>
 
           <!-- Projects Grid -->
-          <div class="grid md:grid-cols-2 text-center lg:grid-cols-3 gap-8"> 
+          <!-- lg:grid-cols-3 -->
+          <div class="grid md:grid-cols-2 text-center gap-8"> 
 
             <!-- Project Card 1 -->
             <div class="project-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" data-project="1">
@@ -175,7 +175,7 @@
             </div>
 
             <!-- Project Card 2 -->
-            <div class="project-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" data-project="2">
+            <!-- <div class="project-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" data-project="2">
               <div class="aspect-video relative overflow-hidden">
                 <img src="images/tunistic_mockup.png" alt="Tunisitic App Cover" class="w-full h-full p-2 object-cover">
               </div>
@@ -192,7 +192,7 @@
                   <span class="py-1 bg-brand-100 text-text-primary text-xs rounded uppercase">Core Data</span>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- Project Card 3 -->
             <div class="project-card bg-bg-primary hover:bg-bg-secondary rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" data-project="3">
@@ -237,7 +237,7 @@
           <div class="p-6">
             <div class="mb-16 relative">
               <div id="carousel-container" class="aspect-video rounded-lg overflow-hidden relative">
-                <img id="carousel-image" src="" alt="Project Image" class="w-full h-full object-cover">
+                <img id="carousel-image" src="" alt="Project Image" class="w-full h-full object-contain">
               </div>
             
               <!-- Nav container -->
@@ -261,13 +261,17 @@
             <div class="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Description</h3>
-                <p id="modal-description" class="text-text-caption leading-relaxed mb-8 uppercase">
+                <p id="modal-description" class="text-text-caption leading-tight mb-8 uppercase">
                   Project description here
                 </p>
+
+                <h3 id="modal-achievements-title" class="text-lg font-normal text-text-primary mb-0 uppercase hidden">Key Achievements</h3>
+                <ul id="modal-achievements" class="text-text-caption space-y-2 mb-0 hidden">
+                </ul>
                 
                 <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Features</h3>
                 
-                <!-- Features list will be here -->
+                <!-- Features list -->
                 <ul id="modal-features" class="text-text-caption space-y-2 mb-0">
                 </ul>
                 
@@ -276,12 +280,12 @@
               <div>
                 <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Technologies</h3>
                 
-                <!-- Technology tags will be inserted here -->
+                <!-- Technology tags  -->
                 <div id="modal-tech" class="flex flex-wrap gap-2 mb-8">
                 </div>
                 
                 <h3 class="text-lg font-normal text-text-primary mb-0 uppercase">Links</h3>
-                <!-- Project links will be inserted here -->
+                <!-- Project links -->
                 <div id="modal-links" class="underline space-y-2">
                 </div>
               </div>
@@ -360,25 +364,72 @@
       const mobileMenuButton = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
       const closeMenuButton = document.getElementById('close-menu-button');
+      const menuLinks = mobileMenu.querySelectorAll('.space-y-2 a');
+      const menuHeader = mobileMenu.querySelector('.flex.justify-between');
 
       function openMenu() {
         // show then animate in
         mobileMenu.classList.remove('hidden');
-        // force next frame so transition applies
-        requestAnimationFrame(() => {
-          mobileMenu.classList.remove('opacity-0', '-translate-y-2');
-        });
+       
+        // Set initial states for all animated elements
+        gsap.set(mobileMenu, { autoAlpha: 0 });
+        gsap.set(menuHeader, { y: -10, autoAlpha: 0 });
+        gsap.set(menuLinks, { y: 20, autoAlpha: 0 });
+        
+        // Create animation timeline
+        const tl = gsap.timeline();
+        
+        // Fade in background
+        tl.to(mobileMenu, {
+          autoAlpha: 1,
+          duration: 0.2,
+          ease: 'power2.out'
+        })
+        // Animate header
+        .to(menuHeader, {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.3,
+          ease: 'power2.out'
+        }, '-=0.1')
+        // Stagger menu items
+        .to(menuLinks, {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.4,
+          stagger: 0.08, // Each item starts 0.08s after the previous
+          ease: 'power2.out'
+        }, '-=0.15');
       }
 
       function closeMenu() {
-        // animate out
-        mobileMenu.classList.add('opacity-0', '-translate-y-2');
-        // hide after transition ends
-        const handler = () => {
-          mobileMenu.classList.add('hidden');
-          mobileMenu.removeEventListener('transitionend', handler);
-        };
-        mobileMenu.addEventListener('transitionend', handler);
+        const tl = gsap.timeline({
+          onComplete: () => {
+            mobileMenu.classList.add('hidden');
+          }
+        });
+        
+        // Reverse the animation - stagger out menu items first
+        tl.to(menuLinks, {
+          y: -10,
+          autoAlpha: 0,
+          duration: 0.25,
+          stagger: 0.05, // Faster stagger on close
+          ease: 'power2.in'
+        })
+        // Fade out header
+        .to(menuHeader, {
+          y: -10,
+          autoAlpha: 0,
+          duration: 0.2,
+          ease: 'power2.in'
+        }, '-=0.15')
+        // Fade out background
+        .to(mobileMenu, {
+          autoAlpha: 0,
+          duration: 0.15,
+          ease: 'power2.in'
+        }, '-=0.1');
       }
 
       // Open on hamburger
@@ -600,8 +651,6 @@
 
 
 
-
-
       // // Respect reduced motion
       // const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     
@@ -650,8 +699,11 @@
         description: "A cross-platform music recommendation app that gives you insights about the music you might like, beyond the sterotypical \"Related to this artist\" explanation",
         images: [
           "images/tunistic_mockup.png",
-          "images/tunistic_mockup.png",
-          "images/tunistic_mockup.png"
+          "images/Pick Artists.png",
+          "images/Discover.png",
+          "images/Library.png",
+          "images/Playlists.png",
+          "images/Artists.png"
         ],
         technologies: ["Flutter", "Figma", "Rest API",],
         features: [
@@ -708,13 +760,23 @@
         title: "Software Developer",
         company: "JuggerBot 3D", 
         duration: "Feb 2024 - Present",
-        description: "Developed desktop applications for 3D printing workflow management. Collaborated with engineering teams to create user-friendly interfaces for complex manufacturing processes. Led initiatives to improve user experience and streamline manufacturing workflows."
+        description: "Design and develop desktop-class applications using C# and WPF, transforming Figma design specifications into production-ready software that meets complex business requirements. Work closely with engineering teams to build advanced interfaces that integrate seamlessly with industrial machinery powered by Trio Motion Perfect systems.",
+        achievements: [
+          "Delivered robust software solutions that improved the usability and performance of industrial automation systems.",
+          "Contributed well-structured, peer-reviewed code to a central GitHub repository, reducing bugs and enhancing maintainability.",
+          "Partnered with cross-functional teams, demonstrating strong collaboration, problem-solving, and adaptability to deliver on critical business needs."
+        ]
       },
       2: {
         title: "Systems Engineer", 
         company: "Talis Clinical",
         duration: "May 2023 - Feb 2024", 
-        description: "Managed clinical trial data systems and developed automated reporting solutions. Ensured compliance with regulatory standards while improving system efficiency. Collaborated with clinical research teams to optimize data collection processes."
+        description: "Collaborated with clinicians and engineering teams to provide technical support for mission-critical healthcare software and hardware solutions. Executed and documented test cases using Microsoft Team Foundation Server (TFS), tracked bugs, and monitored resolution efforts to ensure high-quality software delivery.",
+        achievements: [
+          "Supported integration, system, regression, performance, and user acceptance testing across multiple projects and software releases, contributing to improved reliability and compliance",
+          "Streamlined communication between clinical staff and engineering teams, ensuring rapid resolution of technical issues in high-stakes environments",
+          "Strengthened product quality by proactively identifying issues, verifying fixes, and ensuring robust testing coverage"
+        ]
       }
     };
 
@@ -788,7 +850,7 @@
       const rightColumn = leftColumn.nextElementSibling;
       
       if (type === 'work') {
-        // Hide image carousel completely
+        // Hide image carousel
         carouselContainer.style.display = 'none';
         
         // Update title with company info
@@ -802,13 +864,12 @@
           durationElement.id = 'work-duration';
           durationElement.className = 'px-6 -mt-6 pb-2';
           durationElement.innerHTML = '<p class="text-text-caption text-sm uppercase font-normal"></p>';
-          // Insert after the header div (which contains title and close button)
+          // Insert after the header div (contains title and close button)
           const headerDiv = modalTitle.closest('.flex');
           headerDiv.parentNode.insertBefore(durationElement, headerDiv.nextSibling);
         }
         durationElement.querySelector('p').textContent = data.duration;
         durationElement.style.display = 'block';
-
         
         // Hide the entire right column (tech & links)
         rightColumn.style.display = 'none';
@@ -821,6 +882,25 @@
         // Make left column full width
         leftColumn.parentNode.classList.remove('md:grid-cols-2');
         leftColumn.parentNode.classList.add('grid-cols-1');
+
+        // Show achievements
+        const achievementsTitle = document.getElementById('modal-achievements-title');
+        const achievementsList = document.getElementById('modal-achievements');
+
+        achievementsList.innerHTML = '';
+        if (data.achievements && data.achievements.length > 0) {
+          achievementsTitle.classList.remove('hidden');
+          achievementsList.classList.remove('hidden');
+          data.achievements.forEach(a => {
+            const li = document.createElement('li');
+            li.className = 'text-text-caption uppercase';
+            li.textContent = a;
+            achievementsList.appendChild(li);
+          });
+        } else {
+          achievementsTitle.classList.add('hidden');
+          achievementsList.classList.add('hidden');
+        }
         
       } else {
         // Show everything for projects
@@ -880,7 +960,60 @@
           a.textContent = `[${link.text.toUpperCase()}]`;
           modalLinks.appendChild(a);
         });
+
+        document.getElementById('modal-achievements-title').classList.add('hidden');
+        document.getElementById('modal-achievements').classList.add('hidden');
       }
+    }
+
+    //Open modal with GSAP animation
+    function openModalAnimation() {
+      const modalContent = modal.querySelector('.bg-bg-secondary');
+      
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      
+      // Set initial state
+      gsap.set(modal, { autoAlpha: 0 });
+      gsap.set(modalContent, { y: 20, autoAlpha: 0 });
+      
+      // Animate in
+      const tl = gsap.timeline();
+      tl.to(modal, {
+        autoAlpha: 1,
+        duration: 0.2,
+        ease: 'power2.out'
+      })
+      .to(modalContent, {
+        y: 0,
+        autoAlpha: 1,
+        duration: 0.4,
+        ease: 'power2.out'
+      }, '-=0.1');
+    }
+
+    // Function to close modal with GSAP animation
+    function closeModalAnimation() {
+      const modalContent = modal.querySelector('.bg-bg-secondary');
+      
+      const tl = gsap.timeline({
+        onComplete: () => {
+          modal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        }
+      });
+      
+      tl.to(modalContent, {
+        y: 20,
+        autoAlpha: 0,
+        duration: 0.3,
+        ease: 'power2.in'
+      })
+      .to(modal, {
+        autoAlpha: 0,
+        duration: 0.2,
+        ease: 'power2.in'
+      }, '-=0.1');
     }
 
     // Project card event listeners
@@ -891,8 +1024,9 @@
         
         if (project) {
           populateModal(project, 'project');
-          modal.classList.remove('hidden');
-          document.body.style.overflow = 'hidden';
+          openModalAnimation();
+          // modal.classList.remove('hidden');
+          // document.body.style.overflow = 'hidden';
         }
       });
     });
@@ -905,31 +1039,37 @@
         
         if (work) {
           populateModal(work, 'work');
-          modal.classList.remove('hidden');
-          document.body.style.overflow = 'hidden';
+          openModalAnimation();
+          // modal.classList.remove('hidden');
+          // document.body.style.overflow = 'hidden';
         }
       });
     });
 
     // Close modal
-    closeModal.addEventListener('click', () => {
-      modal.classList.add('hidden');
-      document.body.style.overflow = 'auto';
-    });
+    closeModal.addEventListener('click', closeModalAnimation);
+
+    // closeModal.addEventListener('click', () => {
+    //   modal.classList.add('hidden');
+    //   document.body.style.overflow = 'auto';
+    // });
 
     // Close modal when clicking outside
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
+        closeModalAnimation();
+        // modal.classList.add('hidden');
+        // document.body.style.overflow = 'auto';
       }
     });
 
     // Close modal with Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
+        closeModalAnimation();
+
+        // modal.classList.add('hidden');
+        // document.body.style.overflow = 'auto';
       }
     });
 

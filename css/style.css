@@ -954,10 +954,6 @@ video {
   width: 0.5rem;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-72 {
   width: 18rem;
 }
@@ -2361,6 +2357,10 @@ video {
   line-height: 1.625;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
 .tracking-tighter {
   letter-spacing: -0.05em;
 }
@@ -2779,3 +2779,4 @@ video {
     line-height: 1;
   }
 }
+  
